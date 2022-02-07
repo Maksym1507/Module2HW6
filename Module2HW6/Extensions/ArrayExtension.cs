@@ -1,8 +1,8 @@
 ﻿using Module2HW6.Models;
 
-namespace Module2HW6.Extentions
+namespace Module2HW6.Extensions
 {
-    public static class ArrayExtention
+    public static class ArrayExtension
     {
         public static Car SearchByMaxEngineCapacity(this Car[] cars)
         {

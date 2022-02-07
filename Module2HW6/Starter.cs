@@ -1,6 +1,6 @@
 ﻿using Module2HW6.Enums;
 using Module2HW6.Exceptions;
-using Module2HW6.Extentions;
+using Module2HW6.Extensions;
 using Module2HW6.Interfaces;
 using Module2HW6.Models;
 
@@ -27,7 +27,7 @@ namespace Module2HW6
             var bmwM5 = new BMW("BMW M5", new (2008, 12, 15), GearboxType.Automatic, 3.7, 1.2, 100, 5);
 
             Car[] cars = { bmwM8, mercedesGLC123, bmwM3Competition, mercedesE124, bmwM5 };
-            var car = ArrayExtention.SearchByMaxEngineCapacity(cars);
+            var car = ArrayExtension.SearchByMaxEngineCapacity(cars);
 
             Message.ShowMessage("Enter car which has the biggest capacity engine:");
             Message.ShowMessage(car.ToString());
@@ -43,7 +43,7 @@ namespace Module2HW6
                 Message.ShowMessage($"{ex.Message}. Uncorrect value {ex.Value}\n");
             }
 
-            car = ArrayExtention.SearchByMaxEngineCapacity(cars);
+            car = ArrayExtension.SearchByMaxEngineCapacity(cars);
 
             Message.ShowMessage("Enter car which has the biggest capacity engine:");
             Message.ShowMessage(car.ToString());
