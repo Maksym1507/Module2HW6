@@ -15,6 +15,7 @@ namespace Module2HW6
         }
 
         private INotificationService Message { get; set; }
+
         private IMaintenanceStationService MaintenanceStationService { get; set; }
 
         public void Run()

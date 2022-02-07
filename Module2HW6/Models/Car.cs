@@ -14,7 +14,9 @@ namespace Module2HW6.Models
         }
 
         public GearboxType Gearbox { get; set; }
+
         public double AccelerationTo100KM { get; set; }
+
         public double EngineCapacity { get; set; }
     }
 }
